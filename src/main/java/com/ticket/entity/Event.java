@@ -20,6 +20,7 @@ public class Event {
 	private String time;
 	private String category;
 	private String organizer;
+	private String active;
 	
 	@OneToMany(mappedBy="event")
 	@JsonManagedReference
@@ -66,5 +67,11 @@ public class Event {
 	}
 	public void setTicketList(List<Ticket> ticketList) {
 		this.ticketList = ticketList;
+	}
+	public String getActive() {
+		return active;
+	}
+	public void setActive(String active) {
+		this.active = active;
 	}
 }

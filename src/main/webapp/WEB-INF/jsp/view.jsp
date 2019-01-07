@@ -1,7 +1,6 @@
 <html>
-<head></head>
+<head><title>Ticket Application</title></head>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <body>
 <h2>Event listing</h2>
 <table>
@@ -13,7 +12,7 @@
 <td>${event.time}</td>
 <td>${event.category}</td>
 <td>${event.organizer}</td>
-<td><button>Book</button></td>
+<td><a href="/bookEvent/${event.eventId}">Book</button></td>
 </tr>
 </c:forEach>
 </table>

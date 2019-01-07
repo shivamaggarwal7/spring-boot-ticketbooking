@@ -23,6 +23,13 @@ public class User {
 	@JoinColumn(name="ticketId")
 	@JsonBackReference
 	private Ticket ticket;
+	
+	public User(String userName, String email, String phone) {
+		super();
+		this.userName = userName;
+		this.email = email;
+		this.phone = phone;
+	}
 
 	public long getUserId() {
 		return userId;

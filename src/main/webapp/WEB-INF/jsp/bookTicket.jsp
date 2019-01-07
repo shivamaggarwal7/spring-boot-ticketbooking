@@ -9,8 +9,17 @@
 <td>${ticket.tktType}</td>
 <td>${ticket.tktDesc}</td>
 <td>${ticket.price}</td>
-<td><a href="/bookEvent/${ticket.ticketId}">Book</button></td>
 </tr>
 </table>
+<form action="/bookTicket" name="userDetails" method="post">
+<label>Username</label>
+<input name="userName" type="text" /></br>
+<input name="ticketId" type="hidden" value="${ticket.ticketId}" /></br>
+<label>Email</label>
+<input name="email" type="text"/></br>
+<label>Phone</label>
+<input name="phone" type="text"/></br>
+<input type="submit" value="Book"> 
+</form>
 </body>
 </html>

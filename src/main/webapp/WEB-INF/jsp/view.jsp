@@ -12,7 +12,7 @@
 <td>${event.time}</td>
 <td>${event.category}</td>
 <td>${event.organizer}</td>
-<td><a href="/bookEvent/${event.eventId}">Book</button></td>
+<td><a href="/viewTickets/${event.eventId}">View Tickets</button></td>
 </tr>
 </c:forEach>
 </table>

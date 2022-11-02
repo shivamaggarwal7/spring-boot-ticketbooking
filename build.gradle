@@ -8,9 +8,6 @@ buildscript {
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
-	springBoot {
-	  mainClassName = 'com.ticket.TicketApplication'
-	}
 }
 
 apply plugin: 'java'

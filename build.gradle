@@ -9,7 +9,7 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 	bootJar {
-	    mainClassName = 'com.baeldung.Application'
+	    mainClassName = 'java.com.ticket.TicketApplication'
 	}
 }
 
